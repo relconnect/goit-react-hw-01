@@ -24,6 +24,5 @@
   ],
   "devDependencies": {
     "prop-types": "^15.7.2"
-  },
-  "homapage": "https://relconnect.github.io/goit-react-hw-01/"
+  }
 }
