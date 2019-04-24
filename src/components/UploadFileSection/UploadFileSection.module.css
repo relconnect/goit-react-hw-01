@@ -1,0 +1,8 @@
+.stats-section {
+    display: flex;
+    flex-direction: column;
+    
+    width: 270px;
+    height: 130px;
+    background: #ffff;
+}

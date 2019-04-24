@@ -1,6 +1,6 @@
 import React, { Fragment } from "react";
 import ProfileDescription from "../ProfileDescription/ProfileDescription";
-import Stats from "../Stats/Stats";
+import SocialStats from "../SocialStats/SocialStats";
 import styles from "./Profile.module.css";
 import PropType from 'prop-types';
 
@@ -9,7 +9,7 @@ const Profile = ({ items }) => (
     {items.map(item => (
       <div key={item.id} className={styles.profile}>
         <ProfileDescription {...item} />
-        <Stats {...item.stats} />
+        <SocialStats {...item.stats} />
       </div>
     ))}
   </Fragment>
