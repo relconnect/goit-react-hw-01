@@ -14,7 +14,7 @@ const TransactionHistory = ({items}) => (
     <tbody>
         
     {items.map(item => (
-      <Transaction transaction = {item}/>
+      <Transaction transaction = {...item}/>
     ))}
       
     </tbody>
