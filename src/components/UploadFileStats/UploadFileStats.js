@@ -1,5 +1,6 @@
 import React from "react";
 import styles from './UploadFileStats.module.css';
+import PropTypes from 'prop-types';
 
 const UploadFileStats = ({ stats }) => (
   <ul className={styles["stat-list"]}>
@@ -12,4 +13,8 @@ const UploadFileStats = ({ stats }) => (
   </ul>
 );
 
+UploadFileStats.propTypes = {
+  stats: PropTypes.arrayOf(PropTypes.shape({ id: PropTypes.string.isRequired })).isRequired,
+  
+};
 export default UploadFileStats;

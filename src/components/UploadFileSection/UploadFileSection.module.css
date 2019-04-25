@@ -1,8 +1,10 @@
 .stats-section {
     display: flex;
     flex-direction: column;
-    
+    margin: 0 auto;
     width: 270px;
     height: 130px;
     background: #ffff;
+    margin-bottom: 50px;
+    margin-top: 50px;
 }

@@ -1,6 +1,6 @@
 import React from "react";
 import styles from './SocialStats.module.css';
-import PropType from "prop-types";
+import PropTypes from "prop-types";
 
 const Stats = ({ followers, likes, views }) => (
   <ul className={styles.stats}>
@@ -20,9 +20,9 @@ const Stats = ({ followers, likes, views }) => (
 );
 
 Stats.propTypes = {
-    followers: PropType.number.isRequired,
-    likes: PropType.number.isRequired,
-    views: PropType.number.isRequired,    
+    followers: PropTypes.number.isRequired,
+    likes: PropTypes.number.isRequired,
+    views: PropTypes.number.isRequired,    
   };
 
 export default Stats;

@@ -2,7 +2,7 @@ import React, { Fragment } from "react";
 import ProfileDescription from "../ProfileDescription/ProfileDescription";
 import SocialStats from "../SocialStats/SocialStats";
 import styles from "./Profile.module.css";
-import PropType from 'prop-types';
+import PropTypes from 'prop-types';
 
 const Profile = ({ items }) => (
   <Fragment>
@@ -16,7 +16,7 @@ const Profile = ({ items }) => (
 );
 
 Profile.propTypes = {
-    items: PropType.arrayOf(PropType.shape({ id: PropType.number.isRequired }))
+    items: PropTypes.arrayOf(PropTypes.shape({ id: PropTypes.number.isRequired }))
     .isRequired,
 }
 

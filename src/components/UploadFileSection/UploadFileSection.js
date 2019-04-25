@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React from "react";
 import UploadFileStats from '../UploadFileStats/UploadFileStats';
 import UploadFileTitle from '../UploadFileTitle/UploadFileTitle';
 import styles from './UploadFileSection.module.css';
@@ -10,5 +10,11 @@ const UploadFileSection = ({prop}) => (
         <UploadFileStats stats= {prop}/>
     </section>
 )
+
+
+UploadFileSection.propTypes = {
+    prop: PropType.array.isRequired
+}
+
 
 export default UploadFileSection ;
