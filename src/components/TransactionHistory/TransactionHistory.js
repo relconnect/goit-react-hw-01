@@ -1,8 +1,8 @@
-import React from "react";
-import Transaction from "../Transaction/Transaction";
-import PropTypes from "prop-types";
+import React from 'react';
+import PropTypes from 'prop-types';
+import Transaction from '../Transaction/Transaction';
 
-const TransactionHistory = ( {items} ) => (
+const TransactionHistory = ({ items }) => (
   <table className="transaction-history">
     <thead>
       <tr>
@@ -24,8 +24,8 @@ TransactionHistory.propTypes = {
       id: PropTypes.string.isRequired,
       type: PropTypes.string.isRequired,
       amount: PropTypes.string.isRequired,
-      currency: PropTypes.string.isRequired
-    })
-  ).isRequired
+      currency: PropTypes.string.isRequired,
+    }),
+  ).isRequired,
 };
 export default TransactionHistory;
